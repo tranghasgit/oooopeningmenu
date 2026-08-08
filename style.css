@@ -2,6 +2,12 @@
   font-family: "Kabel Black"; /* set name */
   src: url(fonts/NeueKabel-Black.otf); /* url of the font */
 }
+body{
+  margin: 0;
+  padding: 0;
+  /* background-color: #fff3b4; */
+  background-color: black;
+}
 .big-container{
   display:flex;
   flex-direction: row;
@@ -16,6 +22,7 @@
 }
 .side-bar{
   /* background-color: yellow; */
+  padding: 0.5em;
   padding-top: 1em;
 }
 .side-bar p{
@@ -30,16 +37,16 @@
 }
 .side-bar p a{
   text-decoration: none;
-  color: red;
+  color: #fff3b4;
 }
 .side-bar p :first-child{
-  color:red;
+  color:#fff3b4;
 }
 .side-bar p :nth-child(2){
-  color:red;
+  color:#fff3b4;
 }
 .side-bar p :nth-child(3){
-  color:red;
+  color:#fff3b4;
 }
 img{
   width:100%;
