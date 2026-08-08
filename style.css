@@ -22,18 +22,19 @@ body{
 }
 .side-bar{
   /* background-color: yellow; */
-  padding: 0.5em;
-  padding-top: 1em;
+  margin: 0.5em;
+  margin-right: 1em;
 }
 .side-bar p{
   font-family: "Kabel Black";
   font-size: 1.5em;
   margin: 0em;
 
-  writing-mode: vertical-rl;
+  text-align: right;
+  /* writing-mode: vertical-rl;
   text-orientation: sideways;
   -ms-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+  transform: rotate(-180deg); */
 }
 .side-bar p a{
   text-decoration: none;
