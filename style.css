@@ -6,7 +6,7 @@ body{
   margin: 0;
   padding: 0;
   /* background-color: #fff3b4; */
-  background-color: black;
+  background-color: #23150e;
 }
 .big-container{
   display:flex;
@@ -20,24 +20,39 @@ body{
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
+.item{
+  /* background-color: white; */
+  flex-grow:1;
+}
+.spacer{
+  width: 200%;
+}
+.middle-gutter{
+  width: 10em;
+}
+
 .side-bar{
   /* background-color: yellow; */
-  margin: 0.5em;
-  margin-right: 1em;
+  margin: 2.5em;
+  /* margin-right: 1em; */
 }
 .side-bar p{
   font-family: "Kabel Black";
   font-size: 1.5em;
   margin: 0em;
 
-  text-align: right;
+  text-align: center;
   /* writing-mode: vertical-rl;
   text-orientation: sideways;
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg); */
 }
+
 .side-bar p a{
   text-decoration: none;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+
   color: #fff3b4;
 }
 .side-bar p :first-child{
