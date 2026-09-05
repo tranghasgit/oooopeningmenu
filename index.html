@@ -5,22 +5,21 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
   </head>
   <body>
     <div class="side-bar">
-      <p><a href="https://www.instagram.com/oooopeninghours/" target="_blank">instagram</a> <a href="mailto:oooopeninghours@gmail.com"> email</a> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNDlc3Lj02-D_xOoK2XDcb_Zeabu9iv06Pclq9IkMPC6FpWg/viewform?usp=dialog" target="_blank"> order link</a></p>
+      <!-- <p class="copied">email copied to clipboard!</p> -->
+      <p>
+        <a href="https://www.instagram.com/oooopeninghours/" target="_blank">instagram</a>
+        <a href=" " onclick="myFunction()" class="email-copy" data-text="oooopeninghours@gmail.com">email</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNDlc3Lj02-D_xOoK2XDcb_Zeabu9iv06Pclq9IkMPC6FpWg/viewform?usp=dialog" target="_blank">order link</a>
+      </p>
+      <p class="copied">email copied to clipboard!</p>
     </div>
     <div class="big-container">
       <div class="container">
-        <!-- <div class="menu-en">
-          <img src="imgs/menu-en.jpg" alt="">
-        </div>
-        <div class="menu-vn">
-          <img src="imgs/menu-vn.jpg" alt="">
-        </div>
-        <div class="prog-en">
-          <img src="imgs/prog-en.jpg" alt="">
-        </div> -->
         <div class="item spacer"></div>
 
         <div class="item">
@@ -34,8 +33,48 @@
         </div>
 
         <div class="item spacer"></div>
-
       </div>
     </div>
+    <script>
+      // function myFunction() {
+        // var range = document.createRange();
+        // var element = document.getElementById('email-copy');
+        // var element = document.querySelector('[data-email]');
+        // var email = element.getAttribute('data-email');
+        // range.selectNode(email);
+        // window.getSelection().removeAllRanges(); // clear current selection
+        // window.getSelection().addRange(range); // to select text
+        // document.execCommand("copy");
+        // window.getSelection().removeAllRanges();// to deselect
+        //
+      //   var element = document.querySelector('[data-email]');
+      //   var text = element.getAttribute('data-email');
+      //   document.execCommand("copy", false, text);
+      //   alert(text);
+      // }
+
+      $('.email-copy').on('click', function(e) {
+        e.preventDefault();
+
+        var copyText = $(this).attr('data-text');
+
+        var textarea = document.createElement("textarea");
+        textarea.textContent = copyText;
+        textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in MS Edge.
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+
+        document.body.removeChild(textarea);
+
+        $(".copied").fadeIn('', function(){
+          $(this).delay(200).fadeOut();
+        });
+
+      })
+
+    </script>
+
   </body>
+
 </html>

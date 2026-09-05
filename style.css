@@ -5,10 +5,13 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: "Kabel Black";
+  font-size: 1.5em;
+
   /* background-color: #fff3b4; */
   background-color: #23150e;
-  /* min-width: 100%;
-  min-height: 100%; */
+  min-width: 100%;
+  /* min-height: 100%; */
 }
 img{
   width:100%;
@@ -43,13 +46,14 @@ img{
 
 .side-bar{
   /* background-color: yellow; */
-  margin: 2.5em;
+  margin: 2.5em 0 2.5em 0;
   /* margin-right: 1em; */
 }
 .side-bar p{
   font-family: "Kabel Black";
   font-size: 1.5em;
   margin: 0em;
+  /* color:#fff3b4; */
 
   text-align: center;
 }
@@ -73,6 +77,33 @@ img{
 .side-bar p :nth-child(3){
   color:#fff3b4;
 }
+.copied{
+  position: absolute;
+  /* background-color: white; */
+  color: white;
+  text-align: center;
+  /* opacity: 1; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: none;
+
+
+  /* -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards; */
+
+}
+
+/* @-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+} */
+
 
 @media only screen and (max-width: 600px) {
   .container{
@@ -88,10 +119,9 @@ img{
   }
   .side-bar p{
     font-family: "Kabel Black";
-    font-size: 1em;
+    font-size: 0.7em;
     margin: 0em;
 
     text-align: center;
   }
-
 }
