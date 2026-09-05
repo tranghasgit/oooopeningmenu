@@ -8,13 +8,20 @@ body{
   /* background-color: #fff3b4; */
   background-color: #23150e;
 }
+img{
+  width:25em;
+}
+
 .big-container{
+  width: 100%;
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  /* background-color: red; */
 }
 .container{
+  width: 100%;
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -66,9 +73,6 @@ body{
 }
 .side-bar p :nth-child(3){
   color:#fff3b4;
-}
-img{
-  width:100%;
 }
 
 @media only screen and (max-width: 600px) {
