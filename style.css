@@ -7,9 +7,12 @@ body{
   padding: 0;
   /* background-color: #fff3b4; */
   background-color: #23150e;
+  /* min-width: 100%;
+  min-height: 100%; */
 }
 img{
-  width:25em;
+  width:100%;
+  display: block;
 }
 
 .big-container{
@@ -32,10 +35,10 @@ img{
   flex-grow:1;
 }
 .spacer{
-  width: 200%;
+  width: 100%;
 }
 .middle-gutter{
-  width: 10em;
+  width: 5em;
 }
 
 .side-bar{
@@ -49,10 +52,6 @@ img{
   margin: 0em;
 
   text-align: center;
-  /* writing-mode: vertical-rl;
-  text-orientation: sideways;
-  -ms-transform: rotate(-180deg);
-  transform: rotate(-180deg); */
 }
 
 .side-bar p a{
@@ -78,6 +77,21 @@ img{
 @media only screen and (max-width: 600px) {
   .container{
     flex-direction: column;
+    justify-content: center;
     /* background: blue; */
   }
+  .side-bar{
+    /* background-color: grey; */
+    width: 100%;
+    margin: 1em 0em 1em 0em;
+    /* margin-right: 1em; */
+  }
+  .side-bar p{
+    font-family: "Kabel Black";
+    font-size: 1em;
+    margin: 0em;
+
+    text-align: center;
+  }
+
 }
